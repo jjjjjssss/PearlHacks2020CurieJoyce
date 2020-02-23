@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Bridge of History</title>
+    <meta name="description" content="Bridge of History" />
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://unpkg.com/aframe-event-set-component@^4.0.0/dist/aframe-event-set-component.min.js"></script>
+  </head>
+  <body>
+    <a-scene background="color: #000000">
+      <a-assets>
+        <img
+          id="floor"
+          src="https://cdn.glitch.com/8cf9baf0-4bdb-4976-bcb1-2d0e82fddc81%2F157.jpg?v=1582397826968"
+          static-body
+        />
+      </a-assets>
+
+      <a-entity
+        camera
+        look-controls
+        cursor="rayOrigin: mouse"
+        wasd-controls="acceleration: 30"
+        position="0 2.7 0"
+        rotation="90 180 0"
+      ></a-entity>
+
+      <a-entity environment></a-entity>
+
+      <!--Culture Video 2-->
+      <a-videosphere
+        src="https://cdn.glitch.com/8cf9baf0-4bdb-4976-bcb1-2d0e82fddc81%2FDoi%20Suthep%20-%20Hard%20Tripod%20Paint%20_%20360_VR%20Master%20Series%20_%20Free%20Download.mp4?v=1582421755184"
+        rotation=""
+        position="2.93341 2.52747 8.38727"
+        radius="0.5"
+        material=""
+        geometry=""
+        scale="-1.73647 1.73647 1.73647"
+      ></a-videosphere>
+
+      <!--Culture image 2-->
+      <a-plane
+        src="https://cdn.glitch.com/8cf9baf0-4bdb-4976-bcb1-2d0e82fddc81%2F9448065064_79d5e8e30a_o.jpg?v=1582422438592"
+        rotation="0 -180 0"
+        scale="1.3 1.3 1"
+        position="2.9085 2.72137 7.40167"
+        color="#888888"
+      ></a-plane>
+
+      <a-plane
+        src="https://cdn.glitch.com/8cf9baf0-4bdb-4976-bcb1-2d0e82fddc81%2F9448065064_79d5e8e30a_o.jpg?v=1582422438592"
+        rotation="0 -180 0"
+        scale="1.3 1.3 1"
+        position="2.9085 2.72137 7.38"
+        color="#888888"
+        visible="false"
+        event-set__enter="_event: mouseenter; visible: true"
+        event-set__leave="_event: mouseleave; visible: false"
+      >
+        <a-entity
+          position="1.15 0.68 0"
+          text="anchor: right; width: 1.5; color: #000000; value: Go through the image; visible: false"
+        >
+        </a-entity
+      ></a-plane>
+
+      <!--Culture Sky 1-->
+      <a-sky
+        src="https://cdn.glitch.com/8cf9baf0-4bdb-4976-bcb1-2d0e82fddc81%2F44430320812_f48f10bf48_o.jpg?v=1582420860005"
+        rotation="0 0 0"
+        position="5.5 2.4 6"
+        radius="1"
+      ></a-sky>
+
+      <!--Culture image 1-->
+      <a-plane
+        src="https://cdn.glitch.com/8cf9baf0-4bdb-4976-bcb1-2d0e82fddc81%2F42503757700_5aa295ce76_o.jpg?v=1582419325540"
+        rotation="0 -90 0"
+        scale="1.3 1.3 1"
+        color="#d4d4d4"
+        position="4.49 2.8 6.2"
+        static-body
+      >
+      </a-plane>
+
+      <a-plane
+        src="https://cdn.glitch.com/8cf9baf0-4bdb-4976-bcb1-2d0e82fddc81%2F42503757700_5aa295ce76_o.jpg?v=1582419325540"
+        rotation="0 -90 0"
+        scale="1.3 1.3 1"
+        color="#d4d4d4"
+        position="4.4 2.8 6.2"
+        static-body
+        visible="false"
+        event-set__enter="_event: mouseenter; visible: true"
+        event-set__leave="_event: mouseleave; visible: false"
+      >
+        <a-entity
+          position="1.15 0.68 0"
+          text="anchor: right; width: 1.5; color: #000000; value: Go through the image; visible: false"
+        >
+        </a-entity>
+      </a-plane>
+
+      <!--Culture image 3-->
+      <a-plane
+        src="https://cdn.glitch.com/8cf9baf0-4bdb-4976-bcb1-2d0e82fddc81%2F26668655751_02c2e8c657_o.jpg?v=1582420884401"
+        rotation="0 -180 0"
+        scale="1.8 1.3 1"
+        position="0 2.72137 7.40167"
+        color="#d4d4d4"
+      ></a-plane>
+
+      <a-plane
+        src="https://cdn.glitch.com/8cf9baf0-4bdb-4976-bcb1-2d0e82fddc81%2F26668655751_02c2e8c657_o.jpg?v=1582420884401"
+        rotation="0 -180 0"
+        scale="1.8 1.3 1"
+        position="0 2.72137 7.38"
+        color="#d4d4d4"
+        visible="false"
+        event-set__enter="_event: mouseenter; visible: true"
+        event-set__leave="_event: mouseleave; visible: false"
+      >
+        <a-entity
+          position="1.15 0.68 0"
+          text="anchor: right; width: 1.5; color: #000000; value: Go through the image; visible: false"
+        >
+        </a-entity>
+      </a-plane>
+
+      <a-sky
+        src="https://cdn.glitch.com/8cf9baf0-4bdb-4976-bcb1-2d0e82fddc81%2F26668655751_02c2e8c657_o.jpg?v=1582420884401"
+        rotation=""
+        position="0 2.72137 8.52357"
+        radius="1"
+        material=""
+        geometry=""
+      ></a-sky>
+
+      <!--Culture image 4-->
+      <a-plane
+        src="https://cdn.glitch.com/8cf9baf0-4bdb-4976-bcb1-2d0e82fddc81%2F31105120015_88146b6473_o.jpg?v=1582427906543"
+        rotation=""
+        scale="2.17819 1.51606 1"
+        position="1.90958 2.72137 5.04737"
+        color="#888888"
+        static-body=""
+        material=""
+        geometry=""
+      ></a-plane>
+
+      <!--Glass Ceiling -->
+      <!--<a-box
+        color="#000000"
+        scale="3.28026 1.72745 3.29245"
+        position="2.23772 2.41922 1.49611"
+        material="color: #d0ffff; opacity: 0.2"
+        geometry=""
+      ></a-box>-->
+
+      <!--Artifact 1: Rose-->
+      <a-box
+        color="#ffffff"
+        scale="1.02937 1 0.70802"
+        position="1.69097 2 -1.11911"
+        material=""
+        geometry=""
+      ></a-box>
+      <a-entity
+        obj-model="obj: https://cdn.glitch.com/8cf9baf0-4bdb-4976-bcb1-2d0e82fddc81%2FRose.obj?v=1582454212466; mtl: https://cdn.glitch.com/8cf9baf0-4bdb-4976-bcb1-2d0e82fddc81%2FRose.mtl?v=1582454215535"
+        position="2.03341 2.5 -1.06803"
+        scale="0.00425 0.00425 0.00425"
+        onclick="on()"
+      ></a-entity>
+      <div id="overlay" onclick="off()">
+        <div id="overlay_text">Overlay Text</div>
+      </div>
+      <a-entity
+        geometry=""
+        color="#ffffff"
+        position="1.68937 3 -1.11595"
+        rotation="0 -33.34213297204799 0"
+        scale="1.21771 2 0.00001"
+        static-body=""
+        material="opacity: 0.5"
+      >
+      </a-entity>
+      <a-text
+        font="roboto"
+        color="#000000"
+        position="1.29221 3.34995 -1.35742"
+        rotation="0 -35.27873031959018 0"
+        width="2.6px"
+        value="Seneca Falls \nConvention \n(1848): \n\nthe first wo- \nmen's rights con- \nvention in the \nUnited States."
+        visible="false"
+        event-set__enter="_event: mouseenter; visible: true"
+        event-set__leave="_event: mouseleave; visible: false"
+      ></a-text>
+      <!--Seneca Falls definition from Wikipedia-->
+
+      <!--Artifact 2: Hat-->
+      <a-box
+        color="#ffffff"
+        scale="1.02937 1 0.70802"
+        position="4.15521 2 1.77221"
+        material=""
+        geometry=""
+        rotation="0 -90 0"
+      ></a-box>
+      <a-entity
+        obj-model="obj: https://cdn.glitch.com/8cf9baf0-4bdb-4976-bcb1-2d0e82fddc81%2Fhatsobj.obj?v=1582454186803; mtl: https://cdn.glitch.com/8cf9baf0-4bdb-4976-bcb1-2d0e82fddc81%2Fhatsobj.mtl?v=1582454200948"
+        position="4.10102 2.5 1.75513"
+        scale="0.1454 0.1454 0.1454"
+      ></a-entity>
+      <a-entity
+        geometry=""
+        color="#ffffff"
+        position="4.15058 3 1.77619"
+        rotation="0 -55.299594554846536 0"
+        scale="1.22692 2 0.00001"
+        static-body=""
+        material="opacity: 0.5; transparent: true"
+      >
+      </a-entity>
+      <a-text
+        font="roboto"
+        color="#000000"
+        position="3.88508 3.42618 1.39182"
+        rotation="0 -55.299594554846536 0"
+        width="2.6px"
+        value="Civil Rights Act \n(1964): \n\nlandmark civil \nrights and labor \nlaw."
+        text=""
+        visible="false"
+        event-set__enter="_event: mouseenter; visible: true"
+        event-set__leave="_event: mouseleave; visible: false"
+      ></a-text>
+      <!--Civil Rights Act definition from Wikipedia-->
+
+      <!--Artifact 3 (Flag) -->
+      <a-box
+        color="#ffffff"
+        scale="1.02937 1 0.70802"
+        position="1.68563 2 4.65718"
+        material=""
+        geometry=""
+        rotation=""
+      ></a-box>
+      <a-box
+        src="https://cdn.glitch.com/8cf9baf0-4bdb-4976-bcb1-2d0e82fddc81%2Fpride-4589773_1920.jpg?v=1582443907066"
+        color="#ffffff"
+        scale="0.01579 0.29515 0.48653"
+        position="1.54279 3.04659 4.60323"
+        material=""
+        geometry=""
+        rotation="0 90 0"
+      ></a-box>
+      <a-box
+        color="black"
+        scale="0.01579 0.69373 0.0131"
+        position="1.79013 2.86172 4.60735"
+        material=""
+        geometry=""
+        rotation="0 90 0"
+      ></a-box>
+      <a-entity
+        geometry=""
+        color="#ffffff"
+        position="1.69463 3 4.66873"
+        rotation="0 33 0"
+        scale="1.20149 2 -0.01718"
+        static-body=""
+        material="opacity: 0.5; transparent: true"
+      >
+      </a-entity>
+      <a-text
+        font="roboto"
+        color="#000000"
+        position="2.12416 3.5 4.32576"
+        rotation="0 -146.71100006340347 0"
+        width="2.6px"
+        value="LGBTQ+ Advocacy \n(present): \n\nefforts to defeat \nthe stigma a- \ngainst members of \nthe LGBTQ+ com \nmunity."
+        text=""
+        visible="false"
+        event-set__enter="_event: mouseenter; visible: true"
+        event-set__leave="_event: mouseleave; visible: false"
+      ></a-text>
+
+      <!--Artifact 4-->
+      <a-box
+        color="#ffffff"
+        scale="1.02937 1 0.70802"
+        position="-1.14101 2 1.77221"
+        material=""
+        geometry=""
+        rotation="0 -90 0"
+      ></a-box>
+      <a-entity
+        obj-model="obj: https://cdn.glitch.com/8cf9baf0-4bdb-4976-bcb1-2d0e82fddc81%2FBook.obj?v=1582455401518); mtl: https://cdn.glitch.com/8cf9baf0-4bdb-4976-bcb1-2d0e82fddc81%2FBook.mtl?v=1582455403236"
+        color="#dbc995"
+        position="-1.15049 2.5 1.78012"
+        scale=".3 .3 .3"
+      ></a-entity>
+      <a-entity
+        geometry=""
+        color="#ffffff"
+        position="-1.15049 3 1.78012"
+        rotation="0 -54.676789431539326 0"
+        scale="1.24342 2 0.00001"
+        static-body=""
+        material="opacity: 0.5; transparent: true"
+      ></a-entity>
+      <a-text
+        font="roboto"
+        color="#000000"
+        position="-0.94889 3.5 2.04609"
+        rotation="0 123.69643134858856 0"
+        width="2px"
+        value="Indian Citizen \nAct (1924): \n\ngave Native Ameri-\ncans full citizen-\nship and right to \nvote."
+        text=""
+        visible="false"
+        event-set__enter="_event: mouseenter; visible: true"
+        event-set__leave="_event: mouseleave; visible: false"
+      ></a-text>
+      <!--Indian Citizen Act definition from Wikipedia-->
+      
+      <!--MLK-->
+      <a-entity
+        obj-model="obj: https://cdn.glitch.com/8cf9baf0-4bdb-4976-bcb1-2d0e82fddc81%2FMLKStatue.obj?v=1582454237041"
+        color="#c2c5cc"
+        material="color: #c2c5cc"
+        scale="0.25 0.25 0.25"
+        position="1.58738 1.7 1.86689"
+        rotation="180 0 180"
+      ></a-entity>
+      <a-cylinder
+        color="#c2c5cc"
+        position = "1.611 1.559 1.942"
+        height="0.1"
+        radius="1"
+        material=""
+        geometry=""
+      ></a-cylinder>
+            <a-cylinder
+        color="#c2c5cc"
+        position = "1.611 1.559 1.942"
+        height="0.3"
+        radius="0.7"
+        material=""
+        geometry=""
+      ></a-cylinder>
+
+      <!-- Floor -->
+      <a-plane
+        src="#floor"
+        shader="flat"
+        rotation="-90 0 0"
+        scale="3 3 1s"
+        position="0 1.5 0"
+      ></a-plane>
+      <a-plane
+        src="#floor"
+        shader="flat"
+        rotation="-90 0 0"
+        scale="3 3 1"
+        position="0 1.5 3"
+      ></a-plane>
+      <a-plane
+        src="#floor"
+        shader="flat"
+        rotation="-90 0 0"
+        scale="3 3 1"
+        position="0 1.5 6"
+      ></a-plane>
+      <a-plane
+        src="#floor"
+        shader="flat"
+        rotation="-90 0 0"
+        scale="3 3 1"
+        position="3 1.5 6"
+      ></a-plane>
+      <a-plane
+        src="#floor"
+        shader="flat"
+        rotation="-90 0 0"
+        scale="3 3 1"
+        position="3 1.5 3"
+      ></a-plane>
+      <a-plane
+        src="#floor"
+        shader="flat"
+        rotation="-90 0 0"
+        scale="3 3 1"
+        position="3 1.5 0"
+      ></a-plane>
+
+      <!-- Culture -->
+      <!--       <a-box
+        color="#f0f0f0"
+        scale="1.84538 2.23784 0.2"
+        position="2 1.88791 6.35925"
+        material=""
+        geometry=""
+      ></a-box> -->
+
+      <!-- Outer Wall -->
+      <a-plane
+        src="#wall"
+        color="#f0f0f0"
+        rotation="0 90 0"
+        scale="12 3 0.7"
+        position="-1.5 3 4"
+      ></a-plane>
+      <a-plane
+        src="#wall"
+        color="#f0f0f0"
+        rotation="0 -90 0"
+        scale="12 3 0.7"
+        position="4.5 3 4"
+      ></a-plane>
+      <a-plane
+        src="#wall"
+        color="#f0f0f0"
+        rotation="0 0 0"
+        scale="12 3 0.7"
+        position="4.5 3 -1.5"
+      ></a-plane>
+      <a-plane
+        src="#wall"
+        color="#f0f0f0"
+        rotation="0 180 0"
+        scale="12 3 0.7"
+        position="4.5 3 7.5"
+      ></a-plane>
+
+      <!-- Inner Wall -->
+      <a-box color="#f0f0f0" scale="5 7 0.05" position="2 1.5 5"></a-box>
+
+      <!-- Ceiling -->
+      <a-box
+        src="#wall"
+        color="#f0f0f0"
+        shader="flat"
+        rotation="90 0 0"
+        scale="6.96468 9.74503 -0.06183"
+        position="1.34454 4.45517 3.0268"
+        static-body=""
+        material=""
+        geometry=""
+      ></a-box>
+
+      <!--Lights-->
+      <a-entity light="type: ambient; color: #BBB"></a-entity>
+      <a-entity
+        light="type: directional; color: #FFF; intensity: 0.2"
+        position="-0.5 1 1"
+      ></a-entity>
+      <a-light
+        light="type: point; color: #ffffff; angle: 15; intensity: 0.35"
+      ></a-light>
+
+      <!--Walls -->
+      <a-box
+        src="#wall"
+        color="black"
+        shader="flat"
+        rotation="90 0 0"
+        scale="0.00205 0.30744 0.55997"
+        position="4.64354 2.29124 6.04186"
+        static-body=""
+        material="opacity: 0.4"
+        geometry=""
+      ></a-box>
+      <a-box
+        src="https://cdn.glitch.com/8cf9baf0-4bdb-4976-bcb1-2d0e82fddc81%2Fexit2.PNG?v=1582435966987"
+        shader="flat"
+        rotation="90 0 0"
+        scale="0.00205 0.14058 0.0614"
+        position="4.64354 2.60065 6.04186"
+        static-body=""
+        material="color: #ffffff; opacity: 0.3"
+        geometry=""
+      ></a-box>
+
+      <a-box
+        src="#wall"
+        color="black"
+        shader="flat"
+        rotation="90 0 0"
+        scale="0.24375 -0.02399 0.55997"
+        position="2.97597 2.40995 7.63021"
+        static-body=""
+        material="opacity: 0.4"
+        geometry=""
+      ></a-box>
+      <a-box
+        src="https://cdn.glitch.com/8cf9baf0-4bdb-4976-bcb1-2d0e82fddc81%2Fexit3.PNG?v=1582438017692"
+        rotation="180 -180 0"
+        scale="0.15966 0.09442 0.10325"
+        position="2.97597 2.73746 7.63021"
+        static-body=""
+        material="opacity: 0.4"
+        geometry=""
+      ></a-box>
+      <a-box
+        src="#wall"
+        color="black"
+        shader="flat"
+        rotation="90 0 0"
+        scale="0.24375 -0.02399 0.55997"
+        position="-0.0594 2.59376 7.63021"
+        static-body=""
+        material="opacity: 0.4"
+        geometry=""
+      ></a-box>
+      <a-box
+        src="https://cdn.glitch.com/8cf9baf0-4bdb-4976-bcb1-2d0e82fddc81%2Fexit3.PNG?v=1582438017692"
+        rotation="180 -180 0"
+        scale="0.15966 0.09442 0.10325"
+        position="-0.0625 2.90386 7.63021"
+        static-body=""
+        material="opacity: 0.4"
+        geometry=""
+      ></a-box>
+    </a-scene>
+  </body>
+</html>
