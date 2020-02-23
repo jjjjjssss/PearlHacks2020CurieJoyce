@@ -5,6 +5,7 @@
     <title>Bridge of History</title>
     <meta name="description" content="Bridge of History" />
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+    <script src="https://rawgit.com/donmccurdy/aframe-extras/v2.1.1/dist/aframe-extras.loaders.min.js"></script>
     <script src="https://unpkg.com/aframe-event-set-component@^4.0.0/dist/aframe-event-set-component.min.js"></script>
   </head>
   <body>
@@ -18,12 +19,14 @@
       </a-assets>
 
       <a-entity
-        camera
-        look-controls
+        camera=""
+        look-controls=""
         cursor="rayOrigin: mouse"
-        wasd-controls="acceleration: 30"
-        position="0 2.7 0"
-        rotation="90 180 0"
+        wasd-controls="acceleration: 25"
+        position="0 2.7 6.5"
+        rotation="0 -162 180"
+        raycaster="direction: 0.7226757265325071 0.2563211171664375 -0.6419028580519504; origin: -3.5401942126912487 3.705761472058374 -0.2507226623138525; useWorldCoordinates: true"
+        data-aframe-inspector-original-camera=""
       ></a-entity>
 
       <a-entity environment></a-entity>
@@ -104,7 +107,7 @@
 
       <!--Culture image 3-->
       <a-plane
-        src="https://cdn.glitch.com/8cf9baf0-4bdb-4976-bcb1-2d0e82fddc81%2F26668655751_02c2e8c657_o.jpg?v=1582420884401"
+        src="https://cdn.glitch.com/8cf9baf0-4bdb-4976-bcb1-2d0e82fddc81%2F48765695421_0242280c34_o.jpg?v=1582468662563"
         rotation="0 -180 0"
         scale="1.8 1.3 1"
         position="0 2.72137 7.40167"
@@ -112,7 +115,7 @@
       ></a-plane>
 
       <a-plane
-        src="https://cdn.glitch.com/8cf9baf0-4bdb-4976-bcb1-2d0e82fddc81%2F26668655751_02c2e8c657_o.jpg?v=1582420884401"
+        src="https://cdn.glitch.com/8cf9baf0-4bdb-4976-bcb1-2d0e82fddc81%2F48765695421_0242280c34_o.jpg?v=1582468662563"
         rotation="0 -180 0"
         scale="1.8 1.3 1"
         position="0 2.72137 7.38"
@@ -149,15 +152,6 @@
         geometry=""
       ></a-plane>
 
-      <!--Glass Ceiling -->
-      <!--<a-box
-        color="#000000"
-        scale="3.28026 1.72745 3.29245"
-        position="2.23772 2.41922 1.49611"
-        material="color: #d0ffff; opacity: 0.2"
-        geometry=""
-      ></a-box>-->
-
       <!--Artifact 1: Rose-->
       <a-box
         color="#ffffff"
@@ -177,12 +171,11 @@
       </div>
       <a-entity
         geometry=""
-        color="#ffffff"
+        color="#2985cf"
         position="1.68937 3 -1.11595"
         rotation="0 -33.34213297204799 0"
         scale="1.21771 2 0.00001"
-        static-body=""
-        material="opacity: 0.5"
+        material="opacity: 0.6 transparent: true"
       >
       </a-entity>
       <a-text
@@ -198,7 +191,14 @@
       ></a-text>
       <!--Seneca Falls definition from Wikipedia-->
 
-      <!--Artifact 2: Hat-->
+      <!--Artifact 2: Civil Rights-->
+      <a-entity
+        obj-model="obj: https://cdn.glitch.com/8cf9baf0-4bdb-4976-bcb1-2d0e82fddc81%2F11538_Hand_v2.obj?v=1582471036403; mtl: https://cdn.glitch.com/8cf9baf0-4bdb-4976-bcb1-2d0e82fddc81%2FBlank.mtl?v=1582471040937"
+        position="3.97728 2.69751 1.53"
+        rotation="-180 265 97"
+        scale="0.04 0.04 0.04w"
+        onclick="on()"
+      ></a-entity>
       <a-box
         color="#ffffff"
         scale="1.02937 1 0.70802"
@@ -208,18 +208,20 @@
         rotation="0 -90 0"
       ></a-box>
       <a-entity
-        obj-model="obj: https://cdn.glitch.com/8cf9baf0-4bdb-4976-bcb1-2d0e82fddc81%2Fhatsobj.obj?v=1582454186803; mtl: https://cdn.glitch.com/8cf9baf0-4bdb-4976-bcb1-2d0e82fddc81%2Fhatsobj.mtl?v=1582454200948"
+        obj-model="obj: https://cdn.glitch.com/8cf9baf0-4bdb-4976-bcb1-2d0e82fddc81%2Fskanect_v11580.ply?v=1582469825733"
         position="4.10102 2.5 1.75513"
+        color="#c2c5cc"
+        material="color: #c2c5cc"
         scale="0.1454 0.1454 0.1454"
       ></a-entity>
       <a-entity
         geometry=""
-        color="#ffffff"
+        color="#2985cf"
         position="4.15058 3 1.77619"
         rotation="0 -55.299594554846536 0"
         scale="1.22692 2 0.00001"
         static-body=""
-        material="opacity: 0.5; transparent: true"
+        material="opacity: 0.6; transparent: true"
       >
       </a-entity>
       <a-text
@@ -264,12 +266,12 @@
       ></a-box>
       <a-entity
         geometry=""
-        color="#ffffff"
+        color="#2985cf"
         position="1.69463 3 4.66873"
         rotation="0 33 0"
         scale="1.20149 2 -0.01718"
         static-body=""
-        material="opacity: 0.5; transparent: true"
+        material="opacity: 0.6; transparent: true"
       >
       </a-entity>
       <a-text
@@ -299,25 +301,25 @@
         src="https://cdn.glitch.com/8cf9baf0-4bdb-4976-bcb1-2d0e82fddc81%2Forig_299828_5360.jpg?v=1582465499463"
         position="-1.15049 2.87853 1.78012"
         scale="0.03 0.53792 0.34203"
-        rotation=""
+        rotation="0 29.284445866931502 0"
         material=""
         geometry=""
       ></a-box>
       <a-entity
         geometry=""
-        color="#ffffff"
+        color="#2985cf"
         position="-1.15049 3 1.78012"
         rotation="0 -54.676789431539326 0"
         scale="1.24342 2 0.00001"
         static-body=""
-        material="opacity: 0.5; transparent: true"
+        material="opacity: 0.6; transparent: true"
       ></a-entity>
       <a-text
         font="roboto"
         color="#000000"
-        position="-0.94889 3.5 2.04609"
-        rotation="0 123.69643134858856 0"
-        width="2px"
+        position="-0.91795 3.5 2.10055"
+        rotation="0 124.64123875275928 0"
+        width="2.6px"
         value="Indian Citizen \nAct (1924): \n\ngave Native Ameri-\ncans full citizen-\nship and right to \nvote."
         text=""
         visible="false"
@@ -458,7 +460,8 @@
         position="-0.5 1 1"
       ></a-entity>
       <a-light
-        light="type: point; color: #ffffff; angle: 15; intensity: 0.35"
+        light="type: point; color: #ffffff; angle: 15; intensity: 0.3"
+        position="7.129 0.958 0.602"
       ></a-light>
 
       <!--Walls -->
